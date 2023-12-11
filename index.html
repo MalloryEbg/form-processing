@@ -20,7 +20,7 @@
     </header>   
   <main class="wrapper">
 
-    <h2 class="subheader">An HTML/CSS/JS example by NAME HERE</h2>
+    <h2 class="subheader">An HTML/CSS/JS example by Mallory Ebengho</h2>
     <div id="output">
       <p>The following is a demonstration of a form that can be filled out and when data is entered, the data can be seen on the page.</p>
       <p>Any form fields that have names with an underscore between significant words, such as <b>First_Name</b> 
@@ -37,6 +37,10 @@
       <div>
         <label for="email">Email</label><br>
         <input type="email" name="Email" id="Email" placeholder="Email" required>
+      </div>
+      <div>
+        <label for="Phone">Phone</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="xxx-xxx-xxxx" required>
       </div>
       <div>
         <label for="Address">Address</label><br>
@@ -58,6 +62,14 @@
         </select>
       </div>
       <div>
+      <label for="PostalCode">Postal Code</label><br>
+      <input type="text" name="PostalCode" id="Postal_Code" placeholder="Postal Code" required>
+      </div>
+      Here's a phone number form element which forces correct data entry using regular expressions:
+      
+      
+      Here's more on using regular expressions in HTML form validation: W3Schools on input pattern
+      <div>
         <fieldset>
           <legend>Would you like our mailing list?</legend>
           <label>
@@ -67,10 +79,14 @@
         </fieldset>
       </div>
       <div>
+        <label for="Note">Note</label><br>
+        <textarea name="Note" id="Note" placeholder="Place any special instructions here" rows="4" cols="44"></textarea>
+      </div>
+      <div>
         <legend>Interested In</legend>
         <label>
-          <input type="checkbox" name="Interested_In" value="website"> website <br>
-          <input type="checkbox" name="Interested_In" value="shopping cart"> shopping cart <br>
+          <input type="checkbox" name="Interested_In" value="website"> Website <br>
+          <input type="checkbox" name="Interested_In" value="shopping cart"> Shopping cart <br>
           <input type="checkbox" name="Interested_In" value="JS gallery"> JS gallery <br>
           <input type="checkbox" name="Interested_In" value="lollippops"> Complimentary Lollippops <br>
         </label>
